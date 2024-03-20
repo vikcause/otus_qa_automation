@@ -1,7 +1,7 @@
 """
 description for figure Square
 """
-from rectangle import Rectangle
+from src.rectangle import Rectangle
 
 
 class Square(Rectangle):

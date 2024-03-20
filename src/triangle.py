@@ -2,7 +2,7 @@
 description for figure Triangle
 """
 import math
-from figure import Figure
+from src.figure import Figure
 
 
 class Triangle(Figure):
@@ -27,6 +27,6 @@ class Triangle(Figure):
 
     def get_area(self):
         """correcting parent method for specify figure - triangle"""
-        p = self.get_perimeter()
+        p = 0.5 * self.get_perimeter()
         return math.sqrt(p * (p - self.catet_1) *
                          (p - self.catet_2) * (p - self.gipotenuza))
